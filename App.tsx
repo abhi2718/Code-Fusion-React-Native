@@ -1,11 +1,13 @@
 import React from 'react';
-import SignInScreen from './src/screens/Auth.screen/signIn';
+import {View, Text} from 'react-native';
+import {WrapperContainer} from './src/compoents/tools';
+import Navigation from './src/navigation';
 
 function App() {
   return (
-    <>
-      <SignInScreen />
-    </>
+    <WrapperContainer>
+      <Navigation />
+    </WrapperContainer>
   );
 }
 
