@@ -12,3 +12,10 @@ export const Container = styled.View`
   padding: 16px;
   background: #f0f0f5;
 `;
+type HeaderTextProps = {
+  fontSize: number;
+};
+
+export const HeaderText = styled.Text<HeaderTextProps>`
+  font-size: ${({fontSize = 10}) => `${fontSize}px`};
+`;
