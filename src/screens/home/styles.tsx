@@ -10,8 +10,8 @@ export const Error = styled.Text<ErrorTextProps>`
 export const styles = StyleSheet.create({
   conatiner: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
     //backgroundColor: theme.colors.bg.primary,
   },
 });

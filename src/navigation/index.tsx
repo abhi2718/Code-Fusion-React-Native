@@ -1,19 +1,10 @@
 import React from 'react';
-import {View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {WrapperContainer} from '../compoents/tools';
-import SplashScreen from '../screens/splash';
-import { StackNavigator } from './stack.navigation';
-
-// export default function Navigation() {
-//   return (
-//     <WrapperContainer>
-//       <SplashScreen />
-//     </WrapperContainer>
-//   );
-// }
+import {StackNavigator} from './stack.navigation';
+import {useCometChatInit} from '../services/cometChat.service';
 
 export default function Navigation() {
+  useCometChatInit();
   return (
     <NavigationContainer>
       <StackNavigator />

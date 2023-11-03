@@ -1,7 +1,9 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {View, Text, Pressable} from 'react-native';
-import { theme } from '../../infrastructure/theme';
+import {CometChatConversationsWithMessages} from '@cometchat/chat-uikit-react-native';
+
+import {theme} from '../../infrastructure/theme';
 import {styles, Error} from './styles';
 export const Home = () => {
   const {navigate} = useNavigation();
@@ -13,11 +15,12 @@ export const Home = () => {
 
   return (
     <View style={styles.conatiner}>
-      <Text> Home</Text>
+      <CometChatConversationsWithMessages />
+      {/* <Text> Home</Text>
       <Error color={theme.colors.ui.success}>Error</Error>
       <Pressable onPress={navigator}>
         <Text> Go To Setting</Text>
-      </Pressable>
+      </Pressable> */}
     </View>
   );
 };
