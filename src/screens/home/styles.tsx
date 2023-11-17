@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import styled from 'styled-components/native';
+import { theme } from '../../infrastructure/theme';
 type ErrorTextProps = {
   color?: string;
 };
@@ -12,6 +13,6 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    //backgroundColor: theme.colors.bg.primary,
+    backgroundColor: "red",
   },
 });

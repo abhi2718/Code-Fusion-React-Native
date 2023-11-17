@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-
+import {Platform, Dimensions, StatusBar} from 'react-native';
 export const Error = styled.Text`
   color: red;
 `;
@@ -19,3 +19,12 @@ type HeaderTextProps = {
 export const HeaderText = styled.Text<HeaderTextProps>`
   font-size: ${({fontSize = 10}) => `${fontSize}px`};
 `;
+const {width, height} = Dimensions.get('window');
+const androidStatusBarHeight = StatusBar.currentHeight;
+const isAndroid = Platform.OS === 'android';
+export const dimensions = {
+  width,
+  height,
+  androidStatusBarHeight,
+  isAndroid,
+};
